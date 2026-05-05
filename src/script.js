@@ -19,15 +19,15 @@ const translations = {
     method_text: "Acreditamos em um processo colaborativo. Da escuta ativa à entrega das chaves, cada etapa é desenhada para garantir que o resultado final seja um verdadeiro recanto.",
     prod_intro_title: "NOSSAS JORNADAS",
     prod_intro_text: "Conheça os caminhos que podemos trilhar juntos para realizar seu projeto.",
-    prod_1_title: "JORNADA DA BUSCA",
+    prod_1_title: "BUSCA POR IMÓVEIS",
     prod_1_text: "Auxiliamos na escolha do terreno ou imóvel ideal, analisando potencial construtivo e viabilidade.",
-    prod_2_title: "CONSTRUÇÃO",
+    prod_2_title: "CONSTRUÇÕES",
     prod_2_text: "Projetos residenciais e comerciais do zero, com foco em eficiência e estética atemporal.",
-    prod_3_title: "REFORMA",
+    prod_3_title: "REFORMAS",
     prod_3_text: "Transformação de espaços existentes, otimizando fluxos e renovando a atmosfera.",
-    prod_4_title: "CONSULTORIA EXPRESS",
+    prod_4_title: "INTERIORES",
     prod_4_text: "Soluções rápidas e pontuais para renovar ambientes sem grandes intervenções.",
-    prod_5_title: "MODULARES",
+    prod_5_title: "CONSTRUÇÕES MODULARES",
     prod_5_text: "Arquitetura modular e sustentável para quem busca agilidade e menor impacto ambiental.",
     footer_contact: "CONTATO",
     footer_social: "SOCIAL"
@@ -46,15 +46,15 @@ const translations = {
     method_text: "We believe in a collaborative process. From active listening to handing over the keys, each step is designed to ensure the final result is a true sanctuary.",
     prod_intro_title: "OUR JOURNEYS",
     prod_intro_text: "Discover the paths we can take together to realize your project.",
-    prod_1_title: "SEARCH JOURNEY",
+    prod_1_title: "PROPERTY SEARCH",
     prod_1_text: "We assist in choosing the ideal plot or property, analyzing construction potential and feasibility.",
-    prod_2_title: "CONSTRUCTION",
+    prod_2_title: "CONSTRUCTIONS",
     prod_2_text: "Residential and commercial projects from scratch, focusing on efficiency and timeless aesthetics.",
-    prod_3_title: "RENOVATION",
+    prod_3_title: "RENOVATIONS",
     prod_3_text: "Transformation of existing spaces, optimizing flows and renewing the atmosphere.",
-    prod_4_title: "EXPRESS CONSULTANCY",
+    prod_4_title: "INTERIORS",
     prod_4_text: "Quick and specific solutions to renew environments without major interventions.",
-    prod_5_title: "MODULAR",
+    prod_5_title: "MODULAR CONSTRUCTIONS",
     prod_5_text: "Modular and sustainable architecture for those seeking agility and lower environmental impact.",
     footer_contact: "CONTACT",
     footer_social: "SOCIAL"
@@ -119,7 +119,7 @@ function nextSlide() {
 
 function resetAutoScroll() {
   clearInterval(autoScrollInterval);
-  autoScrollInterval = setInterval(nextSlide, 4000);
+  autoScrollInterval = setInterval(nextSlide, 8000);
 }
 
 // --- Infinite Review Track ---

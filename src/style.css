@@ -270,7 +270,8 @@ main {
   padding: var(--slot-padding);
 }
 
-.image-carousel .slide img {
+/* 1. Proteger o ícone das regras da imagem principal */
+.image-carousel .slide img:not(.click-icon) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -653,4 +654,30 @@ main {
   .marquee-item span {
     font-size: 0.75rem; /* Fonte ainda menor no celular para boa leitura horizontal */
   }
+}
+
+/* 2. Garantir que o slide seja a âncora de posição */
+.image-carousel .slide {
+  position: relative;
+}
+
+/* 3. Posicionar o ícone perfeitamente na quina inferior direita (lado de dentro) */
+.click-icon {
+  position: absolute;
+  bottom: calc(var(--slot-padding) + 12px);
+  right: calc(var(--slot-padding) + 12px);
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  filter: drop-shadow(2px 3px 5px rgba(0,0,0,0.3));
+  pointer-events: none;
+  z-index: 10;
+  animation: click-pulse-slow 4s infinite ease-in-out;
+}
+
+/* Animação beeem suave e vagarosa */
+@keyframes click-pulse-slow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
 }
